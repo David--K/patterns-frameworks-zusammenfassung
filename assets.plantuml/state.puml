@@ -1,0 +1,24 @@
+@startuml
+note "state --> Handle()" as n1
+n1 .. Context
+object Context {
+  Request()
+}
+
+object State {
+  Handle()
+}
+
+Context "state" o--> State
+
+object ConcreteStateA {
+  Handle()
+}
+
+object ConcreteStateB {
+  Handle()
+}
+
+State <|-- ConcreteStateA
+State <|-- ConcreteStateB
+@enduml

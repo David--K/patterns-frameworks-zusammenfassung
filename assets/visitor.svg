@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="357px" preserveAspectRatio="none" style="width:770px;height:357px;background:#FFFFFF;" version="1.1" viewBox="0 0 770 357" width="770px" zoomAndPan="magnify"><defs><filter height="300%" id="f1cfpmq8kzv0xs" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f1cfpmq8kzv0xs)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="64" x="172.5" y="14.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="50" x="179.5" y="27.6387">Program</text><line style="stroke:#A80036;stroke-width:1.5;" x1="173.5" x2="235.5" y1="32.4688" y2="32.4688"/><rect fill="#FEFECE" filter="url(#f1cfpmq8kzv0xs)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="119" x="145" y="121.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="32" x="188.5" y="134.6387">Node</text><line style="stroke:#A80036;stroke-width:1.5;" x1="146" x2="263" y1="139.4688" y2="139.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="107" x="151" y="152.751">Accept(NodeVisitor)</text><path d="M6,323 L6,348.1328 A0,0 0 0 0 6,348.1328 L207,348.1328 A0,0 0 0 0 207,348.1328 L207,333 L197,323 L112.694,323 L120.06,263.1117 L104.694,323 L6,323 A0,0 0 0 0 6,323 " fill="#FBFB77" filter="url(#f1cfpmq8kzv0xs)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M197,323 L197,333 L207,333 L197,323 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="12" y="340.0669">v --&gt; VisitAssignement(this)</text><rect fill="#FEFECE" filter="url(#f1cfpmq8kzv0xs)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="128" x="59.5" y="225"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="68.5" y="238.1387">AssignementNode</text><line style="stroke:#A80036;stroke-width:1.5;" x1="60.5" x2="186.5" y1="242.9688" y2="242.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="116" x="65.5" y="256.251">Accept(NodeVisitor v)</text><path d="M242,323 L242,348.1328 A0,0 0 0 0 242,348.1328 L433,348.1328 A0,0 0 0 0 433,348.1328 L433,333 L423,323 L339.306,323 L323.94,263.1117 L331.306,323 L242,323 A0,0 0 0 0 242,323 " fill="#FBFB77" filter="url(#f1cfpmq8kzv0xs)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M423,323 L423,333 L433,333 L423,323 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="170" x="248" y="340.0669">v --&gt; VisitVariableRef(this)</text><rect fill="#FEFECE" filter="url(#f1cfpmq8kzv0xs)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="128" x="256.5" y="225"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="270.5" y="238.1387">VariableRefNode</text><line style="stroke:#A80036;stroke-width:1.5;" x1="257.5" x2="383.5" y1="242.9688" y2="242.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="116" x="262.5" y="256.251">Accept(NodeVisitor v)</text><rect fill="#FEFECE" filter="url(#f1cfpmq8kzv0xs)" height="49.25" style="stroke:#A80036;stroke-width:1.5;" width="211" x="422" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="492.5" y="20.1387">NodeVisitor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="423" x2="632" y1="24.9688" y2="24.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="199" x="428" y="38.251">VisitAssignement(AssignementNode)</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="185" x="428" y="49.8916">VisitVariableRef(VariableRefNode)</text><rect fill="#FEFECE" filter="url(#f1cfpmq8kzv0xs)" height="49.25" style="stroke:#A80036;stroke-width:1.5;" width="211" x="299" y="116"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="123" x="343" y="129.1387">TypeCheckingVisitor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="300" x2="509" y1="133.9688" y2="133.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="199" x="305" y="147.251">VisitAssignement(AssignementNode)</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="185" x="305" y="158.8916">VisitVariableRef(VariableRefNode)</text><rect fill="#FEFECE" filter="url(#f1cfpmq8kzv0xs)" height="49.25" style="stroke:#A80036;stroke-width:1.5;" width="211" x="545" y="116"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="136" x="582.5" y="129.1387">CodeGeneratingVisitor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="546" x2="755" y1="133.9688" y2="133.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="199" x="551" y="147.251">VisitAssignement(AssignementNode)</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="185" x="551" y="158.8916">VisitVariableRef(VariableRefNode)</text><!--MD5=[f52f40b6afce13cb8e0c5cec3c4ae6b6]
+reverse link Program to Node--><path codeLine="19" d="M204.5,61.785 C204.5,80.805 204.5,105.002 204.5,121.302 " fill="none" id="Program-backto-Node" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="204.5,48.751,200.5,54.751,204.5,60.751,208.5,54.751,204.5,48.751" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="196.4281" y="110.2728">*</text><!--MD5=[e2aada84c649d335f26655b4cc123c80]
+reverse link Node to AssignementNode--><path codeLine="20" d="M177.384,175.479 C164.268,191.914 149.043,210.992 138.129,224.669 " fill="none" id="Node-backto-AssignementNode" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="172.072,170.912,190.019,159.646,183.015,179.645,172.072,170.912" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[33ff33502ab3a5ff5cb6f1d3e70ab6dc]
+reverse link Node to VariableRefNode--><path codeLine="21" d="M240.394,172.907 C259.803,189.89 283.097,210.273 299.55,224.669 " fill="none" id="Node-backto-VariableRefNode" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="235.68,178.084,225.238,159.646,244.9,167.548,235.68,178.084" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ba4ee2ceac3ac416c18afd385df3360b]
+reverse link NodeVisitor to TypeCheckingVisitor--><path codeLine="38" d="M484.849,69.603 C467.224,84.935 447.313,102.256 431.721,115.82 " fill="none" id="NodeVisitor-backto-TypeCheckingVisitor" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="480.518,64.092,500.202,56.247,489.707,74.655,480.518,64.092" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0ebf2ccec76611e508c1583bb7c9b837]
+reverse link NodeVisitor to CodeGeneratingVisitor--><path codeLine="39" d="M570.151,69.603 C587.776,84.935 607.687,102.256 623.279,115.82 " fill="none" id="NodeVisitor-backto-CodeGeneratingVisitor" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="565.293,74.655,554.798,56.247,574.482,64.092,565.293,74.655" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1d6b0831af817bde5f4bb308e02b68f6]
+@startuml
+object Program
+
+object Node {
+  Accept(NodeVisitor)
+}
+
+note "v - -> VisitAssignement(this)" as N1
+AssignementNode .. N1
+object AssignementNode{
+  Accept(NodeVisitor v)
+}
+
+note "v - -> VisitVariableRef(this)" as N2
+VariableRefNode .. N2
+object VariableRefNode{
+  Accept(NodeVisitor v)
+}
+
+Program o- - "*" Node
+Node <|- - AssignementNode
+Node <|- - VariableRefNode
+
+object NodeVisitor {
+  VisitAssignement(AssignementNode)
+  VisitVariableRef(VariableRefNode)
+}
+
+object TypeCheckingVisitor {
+  VisitAssignement(AssignementNode)
+  VisitVariableRef(VariableRefNode)
+}
+
+object CodeGeneratingVisitor {
+  VisitAssignement(AssignementNode)
+  VisitVariableRef(VariableRefNode)
+}
+
+NodeVisitor <|- - TypeCheckingVisitor
+NodeVisitor <|- - CodeGeneratingVisitor
+@enduml
+
+PlantUML version 1.2021.17beta9(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

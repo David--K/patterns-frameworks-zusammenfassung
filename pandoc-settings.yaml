@@ -1,0 +1,17 @@
+table-of-contents: true
+variables:
+  geometry: "margin=0.5in"
+  urlcolor: NavyBlue
+  block-headings: true
+  lang: de
+number-sections: true
+# don't change the order unless you know what you do
+input-files:
+  - metadata.md
+  - zusammenfassung.md
+  - value_patterns.md
+  - checks.md
+  - frameworks.md
+  - meta_patterns.md
+  - frameworkers_dilema.md
+output-file: zusammenfassung.pdf
