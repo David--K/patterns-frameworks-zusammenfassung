@@ -16,4 +16,5 @@ input-files:
   - frameworkers_dilema.md
   - react_redux_eclipse.md
   - singleton.md
+  - flyweight_pooling.md
 output-file: zusammenfassung.pdf
