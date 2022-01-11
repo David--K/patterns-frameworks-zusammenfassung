@@ -532,7 +532,7 @@ Wie kann über eine Collection iteriert werden unter Berücksichtigung des Colle
 
 Wie kann über eine collection iteriert werden, die auf mehreren Tiers verteilt ist, ohne das viel mehr Zeit für Kommunikation als für die Berechnung verwendet wird?
 
-![Batch Method Kommunikationskosten](./assets/internal_iterator.png)
+![Batch Method Kommunikationskosten](./assets/batch_method_problem.png)
 
 ## Lösung
 - Eine Datenstruktur definieren, welche Interface Aufrufe gruppiert. 

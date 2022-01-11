@@ -5,6 +5,7 @@ variables:
   block-headings: true
   lang: de
 number-sections: true
+include-in-header: [disable_float.tex]
 # don't change the order unless you know what you do
 input-files:
   - metadata.md
