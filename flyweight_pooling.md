@@ -156,6 +156,5 @@ Wie kann das teure Akquirieren und Freigeben von Ressourcen verhindert werden du
 
 **A**:
 - A pool handles creation, destruction and reuse of the pooled objects.
-- Caching is about managing resources with identity; pooling does not, all resources in
-the pool are equal.
+- Caching is about managing resources with identity; pooling does not, all resources in the pool are equal.
 - Caches manage only object lifetime in the cache, but not the lifecycle of the objects 
