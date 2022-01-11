@@ -14,6 +14,11 @@ Behavioral Pattern
 
 Definiert eine one-to-many Abhängigkeit zwischen Objekten, sodass wenn ein Objekt seinen Zustand ändert alle davon abhängenden Objekte informiert werden. 
 
+## Beziehung zu anderen Patterns
+Ist wie `Chain of Responsibility`, `Command` und `Mediator` eine Weg um Sender und Empfänger miteinander zu verbinden. 
+
+There’s a popular implementation of the Mediator pattern that relies on Observer. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When Mediator is implemented this way, it may look very similar to Observer.
+
 # Strategy
 Behavioral Pattern
 
@@ -21,6 +26,11 @@ Behavioral Pattern
 
 Definieren einer Gruppe von Algorithmen, welche unabhängig voneinander sind aber auswechselbar. 
 Mit dem Strategy Pattern kann der Algorithmus je nach Benutzer nach einer anderen Strategie durchgeführt werden. 
+
+## Beziehung zu anderen Patterns
+- `Bridge Method`, `State`, `Strategy` und zu einem Teil `Adapter` haben ähnliche Strukturen und alle basieren auf dem `Composite` Pattern. Aber alle lösen unterschiedliche Probleme. 
+- `Decorator` bietet eine Möglichkeit die Repräsentation nach Aussen zu erweitern, während `Strategy` nach Aussen dieselbe Repräsentation beibehaltet, aber die Funktionsweise total verändern kann. 
+- `State` könnte als Erweiterung von `Strategy` betrachtet werden. Bei `State` ist es aber erlaubt, dass es Abhängigkeiten zwischen unterschiedlichen Zuständen gibt.
 
 # Template Method
 Behavioral Pattern
@@ -30,14 +40,21 @@ Behavioral Pattern
 Das Skelett eines Algorithmus wird anhand von Operationen definiert. 
 Eine Subklasse kann einzelne Operationen überschreiben und damit den Algorithmus beeinflussen, ohne das die Struktur des Algorithmus ändert. 
 
+## Beziehung zu anderen Patterns
+- `Template Method` abrietet auf dem `class level`, `Strategy` auf dem `object level` und erlaubt es dadurch das Verhalten während der Laufzeit auszuwechseln.
+
 # Factory Method
 Creational Pattern
 
 ![Factory Method Klassendiagramm](./assets/factory_method.gif)
 
 Es wird ein Interface zum Erstellen eines Objekts definiert, aber die Subklasse davon entscheidet welche konkrete Implementation des Objekts erstellt wird. 
-Facotry Method lässt die Instantiation zur Subklasse verschieben.
+Factory Method lässt die Instantiation zur Subklasse verschieben.
 Im Diagramm wäre das Beispielsweise `MyDocument` eine andere `Application` würde beispielsweise `YourDocument` erstellen. 
+
+## Beziehung zu anderen Patterns
+- `Abstract Factory` Klassen basieren oft auf einer Sammlung von `Factory Methods`.
+- `Factory Method` ist eine Spezialisierung von `Template Method`.
 
 # Abstract Factory 
 Creational Pattern
@@ -46,12 +63,20 @@ Creational Pattern
 
 Stellt ein Interface zur Verfügung zum Erstellen einer Gruppe von abhängenden Objekten, ohne das konkreten Klassen spezifiziert werden. 
 
+## Beziehung zu anderen Patterns
+- `Builder` ist spezialisiert auf das erstllen von komplexen Objekten Schritt für Schritt. `Abstract Factory` hingegen auf das Erstellen einer Sammlung von abhängigen Objekten.
+- `Abstract Factory` Klassen basieren oft auf einer Sammlung von `Factory Methods`.
+- Kann als Alternative zu `Facade` verewndet werden. 
+
 # Prototype
 Creational Pattern
 
 ![Prototype Klassendiagramm](./assets/prototype.gif)
 
 Spezifizieren der Art von Objekten die erstellt werden unter Verwendung einer `prototypical instance` und erstellt neue Objekte durch das Kopieren des Prototypes.
+
+## Beziehung zu anderen Patterns
+- Ist manchmal eine simplere Alternative zu `Memento`, falls die History unkompliziert ist. 
 
 # Composite
 Structural Pattern
@@ -60,6 +85,10 @@ Structural Pattern
 
 Objekte die eine Baumstruktur abbilden zum Repräsentieren von part-whole Hierarchien. Mit dem Composite Pattern können einzelne Objekte und mehrere zusammengesetzte Objekte gleich behandelt werden. 
 
+## Beziehung zu anderen Patterns
+- Kann mit `Iterator` traversiert werden. 
+- Kann als `Flyweight` implementiert werden um RAM zu speichern. 
+
 # Decorator
 Structural Pattern
 
@@ -67,6 +96,11 @@ Structural Pattern
 ![Composite Klassendiagramm](./assets/decorator_2.png)
 
 Zusätzliche Verantwortung kann einem Objekt dynamisch hinzugefügt werden. Eine flexible alternative anstelle zusätzliche Funktionalität mit Subclassing zu erreichen.
+
+## Beziehung zu anderen Patterns
+- `Adapter` ändert das Interface eines Objekts, während Decorator das Interface des Objekts erweitert und `Proxy` das Interface unverändert belässt. 
+- A Decorator is like a Composite but only has one child component
+- `Decorator` bietet eine Möglichkeit die Repräsentation nach Aussen zu erweitern, während `Strategy` nach Aussen dieselbe Repräsentation beibehaltet, aber die Funktionsweise total verändern kann. 
 
 # Adapter
 Structural Pattern
@@ -96,6 +130,7 @@ Stellt ein vereinheitlichtes Interface für mehrere Interfaces eines Subsystems 
 ## Problem 
 - Zu viele Abhängigkeiten zwischen Objekten.
 - Im schlimmsten Fall weiss jedes Objekt von jedem anderen.
+
 Wie kann man `strong coupling` zwischen mehreren Objekten verhinder und die Kommunikation vereinfachen?
 
 ## Teilnehmer 
@@ -145,9 +180,11 @@ Wie kann der Zustand eines Objekts extern verfügbar sein ohne die "encapsulatio
 **Memento**: 
 - Speichert einen Teil oder alles des internen Zustands des `Originator`
 - Erlaubt es nur dem `Originator` auf die internen Informationen zuzugreifen. 
+
 **Originator**: 
 - Kann an strategischen Punkten `Memento` Objekte erstellen, um seinen internen Zustand abzuspeichern.
 - Kann seinen eigenen Zustand wiederherstellen, entsprechen dem das vom `Memento` diktiert wird. 
+
 **Cartaker**: 
 - Speicher das `Memento` Objekt des `Originators`
 - Kann weder den Inhalt des `Memento` Objekt untersuchen noch damit arbeiten.
@@ -158,7 +195,7 @@ Wie kann der Zustand eines Objekts extern verfügbar sein ohne die "encapsulatio
 ![Memento Dynamiken](./assets/memento_dynamics.png)
 
 ## Implementation
-- Originator erstellt memento und verschiebt seinen internen Zustand 
+- Originator erstellt Memento und verschiebt seinen internen Zustand 
   - Beispielsweise kombiniert mit einer Factory Method
 - Originator als `friend` des Mementor markieren, damit der Originator den Zustand aus dem Memento auslesen kann. 
 
@@ -221,6 +258,7 @@ Wie können Kommandos entkoppelt werden, sodass sie parametrisierbar, planbar, p
 ## Lösung
 
 ![Command Klassendiagramm](./assets/command.png)
+
 ![Command Dynamiken](./assets/command_dynamics.png)
 
 
@@ -236,6 +274,7 @@ Wie können Kommandos entkoppelt werden, sodass sie parametrisierbar, planbar, p
 ## Criticism 
 - Nothing new, reification of a method call, with context
 - Command pattern describes nothing about history/undo management
+
 **Lösung**: Command Processor von POSA1
 
 # Command Processor 
@@ -243,6 +282,7 @@ Wie können Kommandos entkoppelt werden, sodass sie parametrisierbar, planbar, p
 ## Problem
 - Herkömmliche UI Applikationen unterstützen `do` und `undo` sowie mehrmaliges aufrufen von `undo`.
 - Schritte `forward` und `backward` sind in einem Verlauf vorhanden 
+
 Wie kann man command Objekte verwenden, sodass die Ausführung separiert vom Aufruf ist und die Ausführung zu einem späteren Zeitpunkt zurückgesetzt werden kann?
 
 ## Teilnehmer
@@ -250,8 +290,10 @@ Wie kann man command Objekte verwenden, sodass die Ausführung separiert vom Auf
 **Command Processor**: 
 - Ein seperates Processor Objekt welches die Verantwortung für mehrere Commands handhaben kann.
 - Diese Verantwortung sollte nicht zu einem Durcheinander des Command Verlauf oder des Client Code führen.
+
 **Command**: 
 - Ein einheitliches Interface zum Ausführen von Funktionen.
+
 **Controller**: 
 - Übersetzt Anfragen in Commands und leitet diese commands dem `Command Processor` weiter.
 
@@ -261,7 +303,7 @@ Wie kann man command Objekte verwenden, sodass die Ausführung separiert vom Auf
 
 ![Command Processor Dynamiken](./assets/command_processor_dynamics.png)
 
-![Command Processor Dynamiken](./assets/command_processor_ablauf.png)
+![Command Processor Ablauf](./assets/command_processor_ablauf.png)
 
 
 ## Implementation
@@ -314,10 +356,12 @@ public class CommandProcessorTest {
 ## Fazit
 - Command Processor complements Command by handling responsibility for execution policy
 - Describes an additional and complementary micro-architecture for Command
+
 ### Vorteile
 - Flexibilität, `Command Processor` und `Controller` werden unabhängig von den `Commands` implementiert
 - Zentraler `Command Processor` erlaubt es Services, die zum Ausführen der `Commands` benötigt werden zu erweitern. 
 - Verbesserte Testbarkeit, `Command Processor` kann zum Ausführen von Regression Test verwendet werden. 
+
 ### Nachteile
 - Effizienzverlust durch die zusätzliche Indirektion.
 
@@ -325,6 +369,7 @@ public class CommandProcessorTest {
 ## Problem
 - Operationen von Klassen sollen verändert oder hinzugefügt werden ohne das die Klasse modifiziert wird. 
 - Unterschiedliche Algorithmen verarbeiten einen "object tree"
+
 Wie kann das Verhalten von individuellen Elementen einer Datenstruktur verändert/ersetzt werden, ohne das Element zu verändern? 
 
 ## Lösung
