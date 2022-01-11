@@ -14,4 +14,6 @@ input-files:
   - frameworks.md
   - meta_patterns.md
   - frameworkers_dilema.md
+  - react_redux_eclipse.md
+  - singleton.md
 output-file: zusammenfassung.pdf

@@ -1,0 +1,14 @@
+@startuml
+class Singleton {
+  static Instance()
+  SingeltonOperation()
+  GetSingletonData()
+  Register(name, singleton)
+  Lookup(name)
+
+  static uniqueInstance
+  singletonData
+}
+note "Instance() returns Lookup(DEFAULT);" as n1
+n1 .. Singleton
+@enduml
