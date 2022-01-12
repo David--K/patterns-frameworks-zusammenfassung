@@ -15,7 +15,7 @@ Behavioral Pattern
 Definiert eine one-to-many Abhängigkeit zwischen Objekten, sodass wenn ein Objekt seinen Zustand ändert alle davon abhängenden Objekte informiert werden. 
 
 ## Beziehung zu anderen Patterns
-Ist wie `Chain of Responsibility`, `Command` und `Mediator` eine Weg um Sender und Empfänger miteinander zu verbinden. 
+Ist wie `Chain of Responsibility`, `Command` und `Mediator` ein Weg um Sender und Empfänger miteinander zu verbinden. 
 
 There’s a popular implementation of the Mediator pattern that relies on Observer. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When Mediator is implemented this way, it may look very similar to Observer.
 
@@ -98,7 +98,7 @@ Structural Pattern
 Zusätzliche Verantwortung kann einem Objekt dynamisch hinzugefügt werden. Eine flexible alternative anstelle zusätzliche Funktionalität mit Subclassing zu erreichen.
 
 ## Beziehung zu anderen Patterns
-- `Adapter` ändert das Interface eines Objekts, während Decorator das Interface des Objekts erweitert und `Proxy` das Interface unverändert belässt. 
+- `Adapter` ändert das Interface eines Objekts, während `Decorator` das Interface des Objekts erweitert und `Proxy` das Interface unverändert belässt. 
 - A Decorator is like a Composite but only has one child component
 - `Decorator` bietet eine Möglichkeit die Repräsentation nach Aussen zu erweitern, während `Strategy` nach Aussen dieselbe Repräsentation beibehaltet, aber die Funktionsweise total verändern kann. 
 
@@ -110,6 +110,9 @@ Structural Pattern
 Konvertieren eines Interface einer Klasse zu einem anderen Interface. 
 Das Adapter Pattern ermöglicht es Klassen zusammenzuarbeiten, welche sonst wegen der inkompatiblen Interfaces Schwierigkeiten hätten.
 
+## Beziehung zu anderen Patterns
+- `Adapter` ändert das Interface eines Objekts, während `Decorator` das Interface des Objekts erweitert und `Proxy` das Interface unverändert belässt. 
+- `Facade` stellt ein neues Interface für ein existierendes Objekt zur Verfügung, `Adapter` hingegen versucht ein bestehendes Interface nutzbar zu machen. `Adapter` ist gewöhnlicherweise nur für ein Objekt, während `Facade` mit mehreren Interfaces arbeitet. 
 
 # Proxy
 Structural Pattern
@@ -118,12 +121,19 @@ Structural Pattern
 
 Stellt einen Stellvertreter oder Platzhalter für ein anderes Objekt zur Verfügung und kontrolliert damit den Zugriff auf dieses Objekt.
 
+## Beziehung zu anderen Patterns
+- `Adapter` ändert das Interface eines Objekts, während `Decorator` das Interface des Objekts erweitert und `Proxy` das Interface unverändert belässt. 
+
 # Facade
 Structural Pattern
 
 ![Composite Klassendiagramm](./assets/facade.png)
 
 Stellt ein vereinheitlichtes Interface für mehrere Interfaces eines Subsystems zur Verfügung. Das Facade Pattern stellt ein higher-level Interface, welches den Zugriff auf das Subsystem vereinfacht zur Verfügung
+
+## Beziehung zu anderen Patterns
+- `Facade` und `Mediator` haben ähnliche Aufgaben, beide versuchen die Zusammenarbeit nahestehender Klassen zu organisieren. 
+- `Facade` stellt ein neues Interface für ein existierendes Objekt zur Verfügung, `Adapter` hingegen versucht ein bestehendes Interface nutzbar zu machen. `Adapter` ist gewöhnlicherweise nur für ein Objekt, während `Facade` mit mehreren Interfaces arbeitet. 
 
 # Mediator
 
@@ -167,6 +177,11 @@ Die Verbindung zwischen `ConcreteMediator` und `ConcreteColleagueX` ist bidirekt
 - Limitationen bezüglich subclassing (mitigated if bi-directions
 are dissolved by an Observer)
 - Kann in einem schwer Wartbaren Monolith Enden (mitigated if bi-directions are dissolved by an Observer)
+
+## Beziehung zu anderen Patterns
+- `Facade` und `Mediator` haben ähnliche Aufgaben, beide versuchen die Zusammenarbeit nahestehender Klassen zu organisieren. 
+- There’s a popular implementation of the Mediator pattern that relies on Observer. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When Mediator is implemented this way, it may look very similar to Observer.
+- Ist wie `Chain of Responsibility`, `Command` und `Mediator` ein Weg um Sender und Empfänger miteinander zu verbinden. 
 
 # Memento
 
@@ -248,6 +263,10 @@ public class Originator {
 - Erstellt jedes Mal eine komplette Kopie des Objekts, kein "diff".
 - Kein Zugriff auf den gespeicherten Zustand, er muss zuerst wiederhergestellt werden. 
 
+## Beziehung zu anderen Patterns
+- Kann mit `Command` zusammen verwendet werden zum rückgängig machen von Aktionen.
+- Kann mit `Iterator` verwendet werden, um den momentanen internen Zustand festzuhalten und Aktionen zum rückgängig machen ausführen. 
+
 # Command 
 
 ## Problem
@@ -276,6 +295,14 @@ Wie können Kommandos entkoppelt werden, sodass sie parametrisierbar, planbar, p
 - Command pattern describes nothing about history/undo management
 
 **Lösung**: Command Processor von POSA1
+
+## Beziehung zu anderen Patterns
+- Ist wie `Chain of Responsibility`, `Command` und `Mediator` ein Weg um Sender und Empfänger miteinander zu verbinden. 
+- `Chain of Responsibility` kann als `Command` implementiert werden.
+- Kann mit `Memento` zusammen verwendet werden. 
+- `Visitor` ist eine mächtige Version des Command 
+- Sieht ähnlich aus wie `Strategy`, aber hat ein anderes Ziel. `Strategy` ermöglicht es unterschiedliche Wege etwas zu erreichen, `Command` hingegen erlaubt es Operationen als Objekte darzustellen. 
+
 
 # Command Processor 
 
@@ -505,6 +532,11 @@ public class XmlVisitorTest {
 - Das Hinzufügen von neuen Node Klassen ist schwer
 - Visitor teilt Logik auf.
 
+## Beziehung zu anderen Patterns
+
+- `Visitor` ist eine mächtige Version des `Command`.
+- `Visitor` kann verwendet werden, um Operationen über eine `Composite` Baum auszuführen.
+- Kann zusammen mit `Iterator` verwendet werden um über komplexe Datenstrukturen zu iterieren.
 
 # External Iterator
 
@@ -531,6 +563,9 @@ Wie kann man `strong coupling` zwischen Iteration und Collection vermeiden und e
 	- or iterator must observe its collection
 - `Close coupling` zwischen Iterator und dazugehörender Collection.
 - Indexing ist möglicherweise intuitiver für Entwickler.
+
+## Beziehung zu anderen Patterns
+- Kann mit `Composite`, `Factory Method`, `Memento` und `Visitor` verwendet werden.
 
 # Internal Iterator
 
