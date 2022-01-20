@@ -257,6 +257,17 @@ public class WebConnection extends EndPointBase {
 - Anything: benefits of Property List but hierarchically structured.
 - Property List: Passing a property list as a parameter allows a client component to extend the amount of data passed to an operation at will. If you want to keep stable interfaces, shared by different teams, but are still heavily under development, property lists as parameters or attributes can be a real life-safer.
 
+**Q**: Gibt es Gründe Patterns nicht zu verwenden? 
+
+**A**: 
+- Das Pattern muss ich immer für die Funktionalität eignen, es bringt nichts ein Pattern zu verwenden nur damit man es verwendet hat. 
+- Ein gutes Design hängt nicht von den verwendet Patterns ab sondern ob sich das Design zum Umsetzten der vorgegebenen Anforderungen eignet, Patterns können unterstützend wirken. 
+- Man stosst auf ein Problem und merkt dann das sich ein Pattern eignen würde, man fängt nicht mit einem Pattern an versucht dann alles dem Pattern anzupassen. 
+
+- sonstiges: Patterns sind nicht auf objekt-orientierte Programmierung begrenzt
+
+
+
 ## Extension Interface (Optional)
 
 ### Problem
