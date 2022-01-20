@@ -278,7 +278,7 @@ Wie können Frameworkbenutzer eine eigene Implementation einer vordefinierten Fr
   - deklarieren der Interface Implementationen.
 - Benutzer verwenden den Container nicht direkt, sondern nur via Framework.
 
-![Dependency Injection Dynamiken](./assets/dependency_injection.png){ width=75% }
+![Dependency Injection Dynamiken](./assets/dependency_injection.png){ width=60% }
 
 ### Implementation
 

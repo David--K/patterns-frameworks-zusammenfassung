@@ -24,7 +24,7 @@
 
 ### Meta Objects
 
-![Meta Objects Übersicht](./assets/meta_objects.png){ width=75% }
+![Meta Objects Übersicht](./assets/meta_objects.png){ width=50% }
 
 ## Reflection Usage
 
@@ -321,9 +321,9 @@ public class HashMap<Key, Value> {
 
 ### Beispiele
 
-![Object Definition](./assets/anything_object_definition.png)
+![Object Definition](./assets/anything_object_definition.png){ width=75% }
 
-![Array Definition](./assets/anything_array_definition.png)
+![Array Definition](./assets/anything_array_definition.png){ width=75% }
 
 Komibinierte Variante als Beispiel om vorherigen Abschnitt.
 

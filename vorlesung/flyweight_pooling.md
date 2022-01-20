@@ -8,11 +8,11 @@
 
 Wie kann das Existieren mehrerer Kopien von identischen konstanten Objekten vermieden werden?
 
-![Flyweight Verwendung](./assets/flyweight_applicability.png){ width=75% }
+![Flyweight Verwendung](./assets/flyweight_applicability.png){ width=65% }
 
 ## Lösung
 
-![Flyweight Klassenkameraden](./assets/flyweight.png)
+![Flyweight Klassenkameraden](./assets/flyweight.png){ width=75% }
 
 ![Flyweight Dynamiken](./assets/flyweight_dynamics.png)
 
