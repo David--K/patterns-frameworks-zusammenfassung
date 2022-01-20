@@ -264,7 +264,7 @@ Wie kann der Zustand eines Objekts extern verfügbar sein ohne die "encapsulatio
 - Kann an strategischen Punkten `Memento` Objekte erstellen, um seinen internen Zustand abzuspeichern.
 - Kann seinen eigenen Zustand wiederherstellen, entsprechen dem das vom `Memento` diktiert wird.
 
-**Cartaker**:
+**Caretaker**:
 
 - Speicher das `Memento` Objekt des `Originators`
 - Kann weder den Inhalt des `Memento` Objekt untersuchen noch damit arbeiten.
