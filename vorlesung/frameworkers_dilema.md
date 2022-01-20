@@ -126,3 +126,16 @@ Potential ways out of the dilemma:
   - Specific arguments change more often; this may break framework user’s code
   - Most flexible and simplest interface specification defines methods with no arguments
 - Encapsulate the parameters/properties into another object
+
+
+### Fragen 
+
+**Q**: Gibt es Gründe Patterns nicht zu verwenden?
+
+**A**:
+
+- Das Pattern muss sich immer für die Funktionalität eignen, es bringt nichts ein Pattern zu verwenden nur damit man es verwendet hat.
+- Ein gutes Design hängt nicht von den verwendet Patterns ab sondern ob sich das Design zum Umsetzten der vorgegebenen Anforderungen eignet, Patterns können unterstützend wirken.
+- Man stosst auf ein Problem und merkt dann das sich ein Pattern eignen würde, man fängt nicht mit einem Pattern an versucht dann alles dem Pattern anzupassen.
+
+- sonstiges: Patterns sind nicht auf objekt-orientierte Programmierung begrenzt

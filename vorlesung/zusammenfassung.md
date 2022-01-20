@@ -65,6 +65,7 @@ Mit dem Strategy Pattern kann der Algorithmus je nach Benutzer nach einer andere
 - `Bridge Method`, `State`, `Strategy` und zu einem Teil `Adapter` haben ähnliche Strukturen und alle basieren auf dem `Composite` Pattern. Aber alle lösen unterschiedliche Probleme.
 - `Decorator` bietet eine Möglichkeit die Repräsentation nach Aussen zu erweitern, während `Strategy` nach Aussen dieselbe Repräsentation beibehaltet, aber die Funktionsweise total verändern kann.
 - `State` könnte als Erweiterung von `Strategy` betrachtet werden. Bei `State` ist es aber erlaubt, dass es Abhängigkeiten zwischen unterschiedlichen Zuständen gibt.
+- Kann mit der Verwendung von `Observers` implementiert werden. 
 
 # Template Method
 
@@ -104,9 +105,9 @@ Stellt ein Interface zur Verfügung zum Erstellen einer Gruppe von abhängenden 
 
 ## Beziehung zu anderen Patterns
 
-- `Builder` ist spezialisiert auf das erstllen von komplexen Objekten Schritt für Schritt. `Abstract Factory` hingegen auf das Erstellen einer Sammlung von abhängigen Objekten.
+- `Builder` ist spezialisiert auf das Erstellen von komplexen Objekten Schritt für Schritt. `Abstract Factory` hingegen auf das Erstellen einer Sammlung von abhängigen Objekten.
 - `Abstract Factory` Klassen basieren oft auf einer Sammlung von `Factory Methods`.
-- Kann als Alternative zu `Facade` verewndet werden.
+- Kann als Alternative zu `Facade` verwendet werden.
 
 # Prototype
 
@@ -376,6 +377,7 @@ public class Originator {
 - Kann mit `Memento` zusammen verwendet werden.
 - `Visitor` ist eine mächtige Version des Command
 - Sieht ähnlich aus wie `Strategy`, aber hat ein anderes Ziel. `Strategy` ermöglicht es unterschiedliche Wege etwas zu erreichen, `Command` hingegen erlaubt es Operationen als Objekte darzustellen.
+- Verwendet `Interpreter` zum Besuchen der Resultate
 
 # Command Processor
 
@@ -756,14 +758,14 @@ Results in a lot of classes and structures (at least one class per state plus st
 
 ### Lösung 1
 
-![Methods of States Dynamike](./assets/methods_of_state_dynamics.png){ width=75% }
+![Methods of States Dynamiken](./assets/methods_of_state_dynamics.png){ width=75% }
 
 - Jeder Zustand ist als Tabelle oder Sammlung von Methoden Referenzen repräsentiert.
 - Die referenzierten Methoden liegen auf der "State Machine" (context) Objekt.
 
 ### Lösung 2
 
-![Methods of States Dynamike](./assets/methods_of_state_2.png)
+![Methods of States digital Uhr](./assets/methods_of_state_2.png)
 
 ### Vorteile
 
