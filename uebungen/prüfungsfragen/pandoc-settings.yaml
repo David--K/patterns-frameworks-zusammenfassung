@@ -1,0 +1,13 @@
+table-of-contents: true
+variables:
+  geometry: "margin=0.5in"
+  urlcolor: NavyBlue
+  block-headings: true
+  lang: de
+number-sections: true
+include-in-header: [disable_float.tex]
+# don't change the order unless you know what you do
+input-files:
+  - posa.md
+  - map.md
+output-file: zusammenfassung.pdf

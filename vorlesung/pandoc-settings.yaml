@@ -1,0 +1,21 @@
+table-of-contents: true
+variables:
+  geometry: "margin=0.5in"
+  urlcolor: NavyBlue
+  block-headings: true
+  lang: de
+number-sections: true
+include-in-header: [disable_float.tex]
+# don't change the order unless you know what you do
+input-files:
+  - metadata.md
+  - zusammenfassung.md
+  - value_patterns.md
+  - checks.md
+  - frameworks.md
+  - meta_patterns.md
+  - frameworkers_dilema.md
+  - react_redux_eclipse.md
+  - singleton.md
+  - flyweight_pooling.md
+output-file: zusammenfassung.pdf
