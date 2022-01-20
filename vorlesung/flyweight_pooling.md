@@ -8,7 +8,7 @@
 
 Wie kann das Existieren mehrerer Kopien von identischen konstanten Objekten vermieden werden?
 
-![Flyweight Verwendung](./assets/flyweight_applicability.png)
+![Flyweight Verwendung](./assets/flyweight_applicability.png){ width=75% }
 
 ## Lösung
 
@@ -116,9 +116,9 @@ Wie kann das teure Akquirieren und Freigeben von Ressourcen verhindert werden du
 
 ![Pooling Strukturen](./assets/pooling.png)
 
-![Pooling Dynamiken](./assets/pooling_dynamics.png)
+![Pooling Dynamiken](./assets/pooling_dynamics.png){ width=75% }
 
-![Pooling Ablauf](./assets/pooling_sequence.png)
+![Pooling Ablauf](./assets/pooling_sequence.png){ width=80% }
 
 ## Implementation
 

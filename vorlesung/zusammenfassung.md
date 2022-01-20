@@ -137,7 +137,7 @@ Objekte die eine Baumstruktur abbilden zum Repräsentieren von part-whole Hierar
 
 Structural Pattern
 
-![Decorator Klassendiagramm](./assets/decorator.png)
+![Decorator Klassendiagramm](./assets/decorator.png){ width=75% }
 
 ![Decorator Klassendiagramm](./assets/decorator_2.png)
 
@@ -210,13 +210,13 @@ Wie kann man `strong coupling` zwischen mehreren Objekten verhinder und die Komm
 
 ## Lösung
 
-![Mediator Klassendiagramm](./assets/mediator.png)
+![Mediator Klassendiagramm](./assets/mediator.png){ width=75% }
 
 Die Verbindung zwischen `ConcreteMediator` und `ConcreteColleagueX` ist bidirektional und könnte als Observer implementiert werden.
 
 ## Dynamik
 
-![Mediator Klassendiagramm](./assets/mediator_dynamics.png)
+![Mediator Dynamiken](./assets/mediator_dynamics.png){ width=75% }
 
 ## Implementation
 
@@ -273,7 +273,7 @@ Wie kann der Zustand eines Objekts extern verfügbar sein ohne die "encapsulatio
 
 ![Memento Klassendiagramm](./assets/memento.png)
 
-![Memento Dynamiken](./assets/memento_dynamics.png)
+![Memento Dynamiken](./assets/memento_dynamics.png){ width=75% }
 
 ## Implementation
 
@@ -347,9 +347,9 @@ public class Originator {
 
 ## Lösung
 
-![Command Klassendiagramm](./assets/command.png)
+![Command Klassendiagramm](./assets/command.png){ width=60% }
 
-![Command Dynamiken](./assets/command_dynamics.png)
+![Command Dynamiken](./assets/command_dynamics.png){ width=90% }
 
 ## Vorteile
 
@@ -403,11 +403,11 @@ Wie kann man command Objekte verwenden, sodass die Ausführung separiert vom Auf
 
 ## Lösung
 
-![Command Processor Klassendiagramm](./assets/command_processor.png)
+![Command Processor Klassendiagramm](./assets/command_processor.png){ width=75% }
 
-![Command Processor Dynamiken](./assets/command_processor_dynamics.png)
+![Command Processor Dynamiken](./assets/command_processor_dynamics.png){ width=75% }
 
-![Command Processor Ablauf](./assets/command_processor_ablauf.png)
+![Command Processor Ablauf](./assets/command_processor_ablauf.png){ width=90% }
 
 ## Implementation
 
@@ -635,7 +635,7 @@ public class XmlVisitorTest {
 
 - Das Wissen für die Iteration ist in ein separates Objekt ausgelagert
 
-![Iterator statische Struktur](./assets/iterator.png)
+![Iterator statische Struktur](./assets/iterator.png){ width=75% }
 
 ![Iterator Dynamiken](./assets/iterator_dynamics.png)
 
@@ -668,7 +668,7 @@ Wie kann über eine Collection iteriert werden unter Berücksichtigung des Colle
 
 ## Lösung 1
 
-![Iterator statische Struktur](./assets/internal_iterator.png)
+![Iterator statische Struktur](./assets/internal_iterator.png){ width=75% }
 
 ## Lösung 2
 
@@ -706,7 +706,7 @@ Wie kann über eine Collection iteriert werden unter Berücksichtigung des Colle
 
 Wie kann über eine collection iteriert werden, die auf mehreren Tiers verteilt ist, ohne das viel mehr Zeit für Kommunikation als für die Berechnung verwendet wird?
 
-![Batch Method Kommunikationskosten](./assets/batch_method_problem.png)
+![Batch Method Kommunikationskosten](./assets/batch_method_problem.png){ width=75% }
 
 ## Lösung
 
@@ -716,7 +716,7 @@ Wie kann über eine collection iteriert werden, die auf mehreren Tiers verteilt 
 
 # State
 
-![State Übersicht](./assets/state_overview.png)
+![State Übersicht](./assets/state_overview.png){ width=75% }
 
 ## Objects for State (The State Pattern)
 
@@ -756,7 +756,7 @@ Results in a lot of classes and structures (at least one class per state plus st
 
 ### Lösung 1
 
-![Methods of States Dynamike](./assets/methods_of_state_dynamics.png)
+![Methods of States Dynamike](./assets/methods_of_state_dynamics.png){ width=75% }
 
 - Jeder Zustand ist als Tabelle oder Sammlung von Methoden Referenzen repräsentiert.
 - Die referenzierten Methoden liegen auf der "State Machine" (context) Objekt.
@@ -785,7 +785,7 @@ Propagates a single class with a lot of methods.
 
 ### Lösung 1
 
-![Collections for States Dynamiken](./assets/collections_for_state_dynamics.png)
+![Collections for States Dynamiken](./assets/collections_for_state_dynamics.png){ width=75% }
 
 Separieren der Objekte in Collections entsprechend dem Objekzustand.
 

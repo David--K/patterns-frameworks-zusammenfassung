@@ -43,7 +43,7 @@ Viele Design Patterns sind Micro Frameworks
 
 ### Command Processor
 
-![Command Processor Framework Komponenten](./assets/command_processor_framework.png)
+![Command Processor Framework Komponenten](./assets/command_processor_framework.png){ width=90% }
 
 ### Fragen
 

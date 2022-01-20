@@ -24,7 +24,7 @@
 
 ### Meta Objects
 
-![Meta Objects Übersicht](./assets/meta_objects.png)
+![Meta Objects Übersicht](./assets/meta_objects.png){ width=75% }
 
 ## Reflection Usage
 
@@ -341,7 +341,7 @@ Wie stellt man eine generische Konfigurations- oder Kommunikations-Datenstruktur
 - In addition, add an implementation for a sequenceof values and provide key-value access
 - Provide a default value if the requested value cannot be converted
 
-![Anything Klassendiagramm](./assets/anything.png)
+![Anything Klassendiagramm](./assets/anything.png){ width=75% }
 
 ### Vorteile
 

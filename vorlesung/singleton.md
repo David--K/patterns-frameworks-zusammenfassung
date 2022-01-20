@@ -214,9 +214,9 @@ Wie kann man die benötigten Daten den tiefen Layers zur Verfügung stellen ohne
 
 Konfigurationparameter und "bekannte" Objekte werden via Constructor oder als Template Paramter übergeben und sind nicht mehr global verfügbar.
 
-![Layers](./assets/parameterize_from_above_layers.png)
+![Layers](./assets/parameterize_from_above_layers.png){ width=60% }
 
-![Implementation](./assets/parameterize_from_above_impl.png)
+![Implementation](./assets/parameterize_from_above_impl.png){ width=80% }
 
 ![Dynamiken](./assets/parameterize_from_above_dynamics.png)
 
@@ -278,7 +278,7 @@ Wie können Frameworkbenutzer eine eigene Implementation einer vordefinierten Fr
   - deklarieren der Interface Implementationen.
 - Benutzer verwenden den Container nicht direkt, sondern nur via Framework.
 
-![Dependency Injection Dynamiken](./assets/dependency_injection.png)
+![Dependency Injection Dynamiken](./assets/dependency_injection.png){ width=75% }
 
 ### Implementation
 

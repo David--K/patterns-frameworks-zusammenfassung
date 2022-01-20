@@ -1,5 +1,5 @@
 # React
-![Übersicht](./assets/react_introduction.png)
+![Übersicht](./assets/react_introduction.png){ width=75% }
 
 ![Architektur](./assets/react_architektur.png)
 
@@ -9,7 +9,7 @@
 
 # Eclipse
 
-![Eclipse Komponenten](./assets/eclipse_architecture.png)
+![Eclipse Komponenten](./assets/eclipse_architecture.png){ width=75% }
 
 ## OSGi
 
@@ -27,7 +27,7 @@
 
 ### Extension Points
 
-![Extension Points](./assets/eclipse_extension_points.png)
+![Extension Points](./assets/eclipse_extension_points.png){ width=75% }
 
 ### GOF
 - Platform
