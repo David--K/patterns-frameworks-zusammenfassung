@@ -138,4 +138,4 @@ Potential ways out of the dilemma:
 - Ein gutes Design hängt nicht von den verwendet Patterns ab sondern ob sich das Design zum Umsetzten der vorgegebenen Anforderungen eignet, Patterns können unterstützend wirken.
 - Man stosst auf ein Problem und merkt dann das sich ein Pattern eignen würde, man fängt nicht mit einem Pattern an versucht dann alles dem Pattern anzupassen.
 
-- sonstiges: Patterns sind nicht auf objekt-orientierte Programmierung begrenzt
+- sonstiges: Patterns sind nicht auf objekt-orientierte Programmierung begrenzt.
